@@ -1,38 +1,251 @@
-.App {
-  text-align: center;
+.ant-tabs-nav .ant-tabs-tab-active {
+  color: #f43517;
+}
+.ant-tabs-nav .ant-tabs-tab:hover {
+  color: #f8f8ff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+div.ant-tabs-tab {
   color: white;
+  font-family: "Montserrat", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.bounce {
+  display: inline-block;
+  position: relative;
+  -moz-animation: bounce 0.5s infinite linear;
+  -o-animation: bounce 0.5s infinite linear;
+  -webkit-animation: bounce 0.5s infinite linear;
+  animation: bounce 0.5s infinite linear;
+  cursor: pointer;
+  transition: 0.5s transform;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.left {
+  -moz-animation: left 0.5s infinite linear;
+  -o-animation: left 0.5s infinite linear;
+  -webkit-animation: left 0.5s infinite linear;
+  animation: left 0.5s infinite linear;
+}
+
+.right {
+  -moz-animation: right 0.5s infinite linear;
+  -o-animation: right 0.5s infinite linear;
+  -webkit-animation: right 0.5s infinite linear;
+  animation: right 0.5s infinite linear;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    top: 0;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    top: -0.2em;
   }
+  70% {
+    top: -0.3em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-moz-keyframes bounce {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -0.2em;
+  }
+  70% {
+    top: -0.3em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-o-keyframes bounce {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -0.2em;
+  }
+  70% {
+    top: -0.3em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-ms-keyframes bounce {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -0.2em;
+  }
+  70% {
+    top: -0.3em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes bounce {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -0.2em;
+  }
+  70% {
+    top: -0.3em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-webkit-keyframes bounce {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -0.2em;
+  }
+  70% {
+    top: -0.3em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-moz-keyframes left {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: -0.2em;
+  }
+  70% {
+    right: -0.3em;
+  }
+  100% {
+    right: 0;
+  }
+}
+@-o-keyframes left {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: -0.2em;
+  }
+  70% {
+    right: -0.3em;
+  }
+  100% {
+    right: 0;
+  }
+}
+@-ms-keyframes left {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: -0.2em;
+  }
+  70% {
+    right: -0.3em;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes left {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: -0.2em;
+  }
+  70% {
+    right: -0.3em;
+  }
+  100% {
+    right: 0;
+  }
+}
+@-moz-keyframes right {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -0.2em;
+  }
+  70% {
+    left: -0.3em;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-o-keyframes right {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -0.2em;
+  }
+  70% {
+    left: -0.3em;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-ms-keyframes right {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -0.2em;
+  }
+  70% {
+    left: -0.3em;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes right {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -0.2em;
+  }
+  70% {
+    left: -0.3em;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+div.ant-tabs-tab {
+  font-size: calc(0.5vmax + 0.5rem);
+}
+
+div.ant-tabs-tab-active.ant-tabs-tab {
+  font-weight: 900;
+}
+
+div.flippy-card.flippy-back {
+  background-color: #2a2c51;
+  min-height: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
 }
