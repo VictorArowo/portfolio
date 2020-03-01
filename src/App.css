@@ -249,3 +249,7 @@ div.flippy-card.flippy-back {
 a {
   color: inherit;
 }
+
+body {
+  background-color: #585c97;
+}

@@ -32,7 +32,7 @@ const Projects = ({ page, setPage }) => {
             <div className="projects">
               <div className="project">
                 <Flippy
-                  flipOnHover={true}
+                  flipOnHover={false}
                   flipOnClick={true}
                   flipDirection="horizontal"
                 >
@@ -80,8 +80,8 @@ const Projects = ({ page, setPage }) => {
               </div>
               <div className="project">
                 <Flippy
-                  flipOnHover={true}
-                  flipOnClick={false}
+                  flipOnHover={false}
+                  flipOnClick={true}
                   flipDirection="horizontal"
                 >
                   <FrontSide>
@@ -125,23 +125,54 @@ const Projects = ({ page, setPage }) => {
               </div>
               <div className="project">
                 <Flippy
-                  flipOnHover={true}
-                  flipOnClick={false}
+                  flipOnHover={false}
+                  flipOnClick={true}
                   flipDirection="horizontal"
                 >
                   <FrontSide>
-                    <h3>AR Lab</h3>
-                    <img src="projects/ar.png" />
+                    <h3>markedit</h3>
+                    <img src="projects/Markedit.png" />
                   </FrontSide>
                   <BackSide style={{ color: "#f43517" }}>
-                    <h3>AR Lab</h3>
+                    <h3>markedit</h3>
+                    <p style={{ color: "#f8f8ff" }}>
+                      A simple to use, cloud based markdown editor
+                    </p>
+                    {["React", "Node.JS", "GraphQL", "MongoDB"].map(
+                      (elem, idx) => {
+                        return (
+                          <Tag key={idx} closable={false}>
+                            {elem}
+                          </Tag>
+                        );
+                      }
+                    )}
+                    <div
+                      className="links"
+                      style={{
+                        color: "#f8f8ff",
+                        fontSize: "38px",
+                        width: "40%",
+                        display: "flex",
+                        justifyContent: "space-around",
+                        margin: "auto",
+                        marginTop: "10px"
+                      }}
+                    >
+                      <a href="https://github.com/VictorArowo/markedit">
+                        <FaGithub />
+                      </a>
+                      <a href="https://markedit.now.sh/">
+                        <FaGlobeAfrica />
+                      </a>
+                    </div>
                   </BackSide>
                 </Flippy>
               </div>
               <div className="project">
                 <Flippy
-                  flipOnHover={true}
-                  flipOnClick={false}
+                  flipOnHover={false}
+                  flipOnClick={true}
                   flipDirection="horizontal"
                 >
                   <FrontSide>
@@ -190,8 +221,8 @@ const Projects = ({ page, setPage }) => {
             <div className="projects">
               <div className="project">
                 <Flippy
-                  flipOnHover={true}
-                  flipOnClick={false}
+                  flipOnHover={false}
+                  flipOnClick={true}
                   flipDirection="horizontal"
                 >
                   <FrontSide>
