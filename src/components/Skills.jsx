@@ -6,87 +6,15 @@ import {
   FaTwitter,
   FaLinkedin,
   FaGithub,
-  FaArrowCircleUp
+  FaArrowCircleUp,
 } from "react-icons/fa";
-
-import ReactApexChart from "react-apexcharts";
 
 const Skills = ({ page, setPage }) => {
   const styles = useSpring({
     opacity: page === 3 ? 0.98 : 0,
     marginTop: page === 3 ? 0 : 500,
-    display: page === 3 ? "flex" : "none"
+    display: page === 3 ? "flex" : "none",
   });
-
-  const series = [
-    {
-      name: "Skill",
-      data: [100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]
-    }
-  ];
-
-  const options = {
-    colors: ["#F44336", "#E91E63", "#9C27B0"],
-    chart: {
-      type: "bar",
-      height: "500px",
-      width: "500px"
-    },
-    plotOptions: {
-      bar: {
-        horizontal: true
-      }
-    },
-    dataLabels: {
-      enabled: false
-    },
-    xaxis: {
-      categories: [
-        "JavaScript",
-        "React",
-        "Redux",
-        "Node.JS",
-        "C#",
-        "ASP.NET Core",
-        "PostgreSQL",
-        "MongoDB",
-        "GraphQL"
-      ],
-      labels: {
-        show: false
-      },
-      lines: {
-        show: false
-      },
-      max: 100,
-      axisTicks: {
-        show: false
-      }
-    },
-    yaxis: {
-      labels: {
-        style: {
-          colors: [
-            "#f43517",
-            "#f43517",
-            "#f43517",
-            "#f43517",
-            "#f43517",
-            "#f43517",
-            "#f43517",
-            "#f43517",
-            "#f43517"
-          ]
-        }
-      }
-    },
-    tooltip: {
-      enabledOnSeries: false,
-      y: {
-        show: false
-      }
-    }
-  };
 
   return (
     <Div style={styles}>
@@ -94,9 +22,48 @@ const Skills = ({ page, setPage }) => {
         <h1 className="header">MY SKILLS</h1>
         <img src="logo.png" alt="logo" />
       </div>
-      <div className="chart">
-        <ReactApexChart options={options} series={series} type="bar" />
-      </div>
+      <Grid>
+        <div className="skill">
+          <img src="skills/react.png" alt="react" />
+          <div>React</div>
+        </div>
+        <div className="skill">
+          <img src="skills/redux.png" alt="redux" />
+          <div>Redux</div>
+        </div>
+        <div className="skill">
+          <img src="skills/node.png" alt="node" />
+          <div>Node.js</div>
+        </div>
+        <div className="skill">
+          <img src="skills/typescript.png" alt="ts" />
+          <div>Typescipt</div>
+        </div>
+        <div className="skill">
+          <img src="skills/vue.png" alt="vue" />
+          <div>Vue</div>
+        </div>
+        <div className="skill">
+          <img src="skills/pg.png" alt="pg" />
+          <div>PostgreSQL</div>
+        </div>
+        <div className="skill">
+          <img src="skills/gql.png" alt="gql" />
+          <div>GraphQL</div>
+        </div>
+        <div className="skill">
+          <img src="skills/python.png" alt="python" />
+          <div>Python</div>
+        </div>
+        <div className="skill">
+          <img src="skills/csharp.png" alt="csharp" />
+          <div>C#</div>
+        </div>
+        <div className="skill">
+          <img src="skills/django.png" alt="django" />
+          <div>Django</div>
+        </div>
+      </Grid>
       <div className="arrow">
         <FaArrowCircleUp
           className="bounce"
@@ -138,6 +105,38 @@ const Skills = ({ page, setPage }) => {
     </Div>
   );
 };
+
+const Grid = styled.div`
+  display: grid;
+  width: 80%;
+  max-height: 64%;
+  min-height: 64%;
+  overflow: auto;
+  /* grid-template-columns: repeat(5, 1fr); */
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-column-gap: 0px;
+  grid-row-gap: 30px;
+
+  .skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 190px;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    font-size: 25px;
+    color: white;
+    div {
+      margin-top: 15px;
+    }
+    img {
+      width: 80px;
+    }
+  }
+`;
 
 const Div = styled(a.div)`
   background-color: #25274d;
@@ -185,6 +184,7 @@ const Div = styled(a.div)`
   }
 
   .bounce {
+    z-index: 10;
     @media ${tabletPortrait} {
       margin-top: 5vmin;
     }
@@ -197,6 +197,8 @@ const Div = styled(a.div)`
   }
 
   .contact {
+    position: absolute;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;

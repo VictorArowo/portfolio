@@ -9,16 +9,16 @@ import {
   FaGithub,
   FaTwitter,
   FaLinkedin,
-  FaArrowCircleLeft
+  FaArrowCircleLeft,
 } from "react-icons/fa";
 
 const { TabPane } = Tabs;
 
 const Projects = ({ page, setPage }) => {
   const styles = useSpring({
-    opacity: page === 1 ? 0.98 : 0,
+    opacity: page === 1 ? 1 : 0,
     marginLeft: page === 1 ? 0 : 500,
-    display: page === 1 ? "flex" : "none"
+    display: page === 1 ? "flex" : "none",
   });
   return (
     <Div style={styles}>
@@ -38,7 +38,7 @@ const Projects = ({ page, setPage }) => {
                 >
                   <FrontSide>
                     <h3>DevDesk Queue</h3>
-                    <img src="projects/Devdesk.png" />
+                    <img alt="" src="projects/Devdesk.png" />
                   </FrontSide>
                   <BackSide>
                     <div>
@@ -64,7 +64,7 @@ const Projects = ({ page, setPage }) => {
                           display: "flex",
                           justifyContent: "space-around",
                           margin: "auto",
-                          marginTop: "10px"
+                          marginTop: "10px",
                         }}
                       >
                         <a href="https://github.com/Developer-Desk-Queue-Lambda-Build/Frontend">
@@ -86,7 +86,7 @@ const Projects = ({ page, setPage }) => {
                 >
                   <FrontSide>
                     <h3>Intl. Rural School</h3>
-                    <img src="projects/RuralSchool.png" />
+                    <img alt="" src="projects/RuralSchool.png" />
                   </FrontSide>
                   <BackSide style={{ color: "#f43517" }}>
                     <h3>Intl. Rural School</h3>
@@ -110,7 +110,7 @@ const Projects = ({ page, setPage }) => {
                         display: "flex",
                         justifyContent: "space-around",
                         margin: "auto",
-                        marginTop: "10px"
+                        marginTop: "10px",
                       }}
                     >
                       <a href="https://github.com/inter-rural-school/front-end">
@@ -131,7 +131,7 @@ const Projects = ({ page, setPage }) => {
                 >
                   <FrontSide>
                     <h3>markedit</h3>
-                    <img src="projects/Markedit.png" />
+                    <img alt="" src="projects/Markedit.png" />
                   </FrontSide>
                   <BackSide style={{ color: "#f43517" }}>
                     <h3>markedit</h3>
@@ -156,7 +156,7 @@ const Projects = ({ page, setPage }) => {
                         display: "flex",
                         justifyContent: "space-around",
                         margin: "auto",
-                        marginTop: "10px"
+                        marginTop: "10px",
                       }}
                     >
                       <a href="https://github.com/VictorArowo/markedit">
@@ -177,7 +177,7 @@ const Projects = ({ page, setPage }) => {
                 >
                   <FrontSide>
                     <h3>Lambda Door</h3>
-                    <img src="projects/LambdaDoor.png" />
+                    <img alt="" src="projects/LambdaDoor.png" />
                   </FrontSide>
                   <BackSide style={{ color: "#f43517" }}>
                     <h3>Lambda Door</h3>
@@ -202,7 +202,7 @@ const Projects = ({ page, setPage }) => {
                         display: "flex",
                         justifyContent: "space-around",
                         margin: "auto",
-                        marginTop: "10px"
+                        marginTop: "10px",
                       }}
                     >
                       <a href="https://github.com/LABS-EU3/lambdaDoor_frontend">
@@ -227,7 +227,7 @@ const Projects = ({ page, setPage }) => {
                 >
                   <FrontSide>
                     <h3>Consim</h3>
-                    <img src="projects/JS.png" />
+                    <img alt="" src="projects/JS.png" />
                   </FrontSide>
                   <BackSide style={{ color: "#f43517" }}>
                     <h3>Consim</h3>
@@ -252,7 +252,7 @@ const Projects = ({ page, setPage }) => {
                         display: "flex",
                         justifyContent: "space-around",
                         margin: "auto",
-                        marginTop: "10px"
+                        marginTop: "10px",
                       }}
                     >
                       <a href="https://github.com/VictorArowo/consim">
@@ -338,7 +338,6 @@ const Div = styled(a.div)`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 20px;
   }
 
   .top {
