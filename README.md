@@ -5,8 +5,6 @@
   </a>
 </p>
 
-> Simple and easy-to-use Markdown Editor
-
 ### 🏠 [Homepage](www.victorarowo.com)
 
 ## Install
