@@ -23,7 +23,7 @@ const About = ({ page, setPage }) => {
       </div>
       <div className="content">
         Hi there, I'm a Nigerian Fullstack Developer and I enjoy making things
-        work. I primary build for the web using Javascript.
+        work. I primarily build for the web using Javascript.
         <br />
         <br />
         Let's get in touch :)
